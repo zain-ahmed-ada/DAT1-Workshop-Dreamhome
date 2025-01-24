@@ -1,4 +1,4 @@
-# DAT-Revision
+# DAT-Workshop-Dreamhome
 
 Run `sqlite3 < dreamhome.sql` for initial setup (rerun this to reset the database)
 
