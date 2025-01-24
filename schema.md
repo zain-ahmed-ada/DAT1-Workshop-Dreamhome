@@ -7,20 +7,6 @@ This is an **entity relationship diagram** providing a clear visual representati
 
 ```mermaid
 erDiagram
-    BRANCH ||--o{ STAFF : employs
-    BRANCH ||--o{ PROPERTYFORRENT : manages
-    BRANCH ||--o{ REGISTRATION : registers_at
-
-    STAFF ||--o{ PROPERTYFORRENT : supervises
-    STAFF ||--o{ REGISTRATION : registers
-
-    PRIVATEOWNER ||--o{ PROPERTYFORRENT : owns
-
-    CLIENT ||--o{ VIEWING : views
-    CLIENT ||--o{ REGISTRATION : registers
-
-    PROPERTYFORRENT ||--o{ VIEWING : is_viewed
-
     BRANCH {
         char branchno PK
         varchar street
