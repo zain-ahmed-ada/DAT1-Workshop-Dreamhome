@@ -63,7 +63,7 @@ Identify all staff members who manage properties with above-average rent for our
 For our board meeting, we need a list of all cities where we either have a branch office or a property for rent, without duplicates.
 
 ### Request 6.2:
-We're updating our database. Please create a new table named 'property_reviews' to store customer feedback.
+We're updating our database. Please create a new table named 'propertyreviews' to store customer feedback.
 
 ### Request 6.3:
 We've collected initial reviews for some properties. Please add these to our new 'property_reviews' table.
