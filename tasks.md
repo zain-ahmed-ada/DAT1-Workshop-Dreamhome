@@ -16,7 +16,7 @@ We're considering expanding to areas with postcode starting 'BS1'. Can you confi
 ## 2. Client Relations Team
 
 ### Request 2.1:
-Find all properties managed by client 'CL5612'. We need this for a client satisfaction survey.
+Find all properties managed by client 'PO4756'. We need this for a client satisfaction survey.
 
 ### Request 2.2:
 We're auditing recent client registrations. Please provide all registrations at branch 'B052' that occurred after September 28, 2013.
