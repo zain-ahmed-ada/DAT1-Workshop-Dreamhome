@@ -44,7 +44,7 @@ We need a comprehensive list of all rental properties, including owner details, 
 Create a report of high-value properties (those with rent higher than average) for potential investors.
 
 ### Request 4.3:
-Due to increased demand, we need to increase the rent for all London properties by 10%.
+Due to increased demand, we need to increase the rent for all Manchester properties by 10%.
 
 ## 5. Operations and HR Team
 
