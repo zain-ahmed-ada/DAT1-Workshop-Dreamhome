@@ -1,10 +1,10 @@
 .open sampleDatabase/sample.sqlite
 .mode column
 
--- DROP TABLE IF EXISTS contacts;
--- DROP TABLE IF EXISTS products;
--- DROP TABLE IF EXISTS voter;
--- DROP TABLE IF EXISTS books;
+DROP TABLE IF EXISTS contacts;
+DROP TABLE IF EXISTS products;
+DROP TABLE IF EXISTS voter;
+DROP TABLE IF EXISTS books;
 
 CREATE TABLE contacts (
     contact_id INTEGER PRIMARY KEY,
