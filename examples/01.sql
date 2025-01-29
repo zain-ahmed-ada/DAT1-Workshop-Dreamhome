@@ -87,15 +87,15 @@ WHERE staffNo IN (SELECT staffNo
 /*
 SELECT staffNo, fName, lName, position, salary
 FROM Staff
-WHERE salary > SOME(SELECT salary
-                    FROM Staff
-                    WHERE branchNo = 'B003');
+WHERE salary > (SELECT MIN(salary)
+                FROM Staff
+                WHERE branchNo = 'B003');
 */
 
 -- Example 6.23
 
 SELECT staffNo, fName, lName, position, salary
 FROM Staff
-WHERE salary > ALL(SELECT salary
-                    FROM Staff
-                    WHERE branchNo = 'B003');
+WHERE salary > (SELECT MAX(salary)
+                FROM Staff
+                WHERE branchNo = 'B003');
