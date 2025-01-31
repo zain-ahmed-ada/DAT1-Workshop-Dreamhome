@@ -27,7 +27,7 @@ CREATE TABLE staff (
     DOB DATE NOT NULL,
     salary REAL NOT NULL,
     branchNo TEXT NOT NULL,
-    FOREIGN KEY(branchNo) REFERENCES branch(branchNo) ON DELETE CASCADE
+    FOREIGN KEY (branchNo) REFERENCES branch (branchNo) ON DELETE CASCADE
 );
 
 CREATE TABLE privateOwner (
@@ -51,9 +51,9 @@ CREATE TABLE propertyForRent (
     ownerNo TEXT NOT NULL,
     staffNo TEXT,
     branchNo TEXT NOT NULL,
-    FOREIGN KEY(ownerNo) REFERENCES privateOwner(ownerNo) ON DELETE CASCADE,
-    FOREIGN KEY(staffNo) REFERENCES staff(staffNo) ON DELETE SET NULL,
-    FOREIGN KEY(branchNo) REFERENCES branch(branchNo) ON DELETE CASCADE
+    FOREIGN KEY (ownerNo) REFERENCES privateOwner (ownerNo) ON DELETE CASCADE,
+    FOREIGN KEY (staffNo) REFERENCES staff (staffNo) ON DELETE SET NULL,
+    FOREIGN KEY (branchNo) REFERENCES branch (branchNo) ON DELETE CASCADE
 );
 
 CREATE TABLE client (
@@ -71,9 +71,9 @@ CREATE TABLE viewing (
     propertyNo TEXT NOT NULL,
     viewDate DATE NOT NULL,
     comment TEXT,
-    PRIMARY KEY(clientNo, propertyNo, viewDate),
-    FOREIGN KEY(clientNo) REFERENCES client(clientNo) ON DELETE CASCADE,
-    FOREIGN KEY(propertyNo) REFERENCES propertyForRent(propertyNo) ON DELETE CASCADE
+    PRIMARY KEY (clientNo, propertyNo, viewDate),
+    FOREIGN KEY (clientNo) REFERENCES client (clientNo) ON DELETE CASCADE,
+    FOREIGN KEY (propertyNo) REFERENCES propertyForRent (propertyNo) ON DELETE CASCADE
 );
 
 CREATE TABLE registration (
@@ -81,10 +81,10 @@ CREATE TABLE registration (
     branchNo TEXT NOT NULL,
     staffNo TEXT,
     dateJoined DATE NOT NULL,
-    PRIMARY KEY(clientNo, branchNo),
-    FOREIGN KEY(clientNo) REFERENCES client(clientNo) ON DELETE CASCADE,
-    FOREIGN KEY(branchNo) REFERENCES branch(branchNo) ON DELETE CASCADE,
-    FOREIGN KEY(staffNo) REFERENCES staff(staffNo) ON DELETE SET NULL
+    PRIMARY KEY (clientNo, branchNo),
+    FOREIGN KEY (clientNo) REFERENCES client (clientNo) ON DELETE CASCADE,
+    FOREIGN KEY (branchNo) REFERENCES branch (branchNo) ON DELETE CASCADE,
+    FOREIGN KEY (staffNo) REFERENCES staff (staffNo) ON DELETE SET NULL
 );
 
 INSERT INTO branch (branchNo, street, city, postcode) VALUES 
